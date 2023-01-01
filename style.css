@@ -81,6 +81,8 @@ section {
 /* ////////// HERO PAGE ////////////// */
 
 .hero-container {
+    box-sizing: border-box;
+    height: min(98%, 550px);
     position: relative;
     display: flex;
     justify-content: center;
@@ -112,8 +114,8 @@ section {
     z-index: 10;
     color: #fff;
     text-align: center;
-    padding: 5rem 1.5rem;
-    padding-top: 9rem;
+    padding: 8rem 1rem 2rem;
+    /* padding-top: 9rem; */
 }
 
 .hero-text {
@@ -173,7 +175,7 @@ section {
 
 /* ///////////// SECTION 2. ENJOY ON TV ///////////// */
 
-.tv-container {
+.tvs {
     text-align: center;
     padding: 4rem 1.1rem;
 }
@@ -215,7 +217,7 @@ section {
 
 /* ///////////// SECTION 3. OFFLINE SESSION ///////////// */
 
-.offline-container {
+.offline-download {
     /* position: relative; */
     padding: 4rem 1.1rem;
     /* height: 40rem; */
@@ -297,7 +299,7 @@ section {
 
 /* ///////////// SECTION 4. WATCH EVERYWHERE ///////////// */
 
-.watch-container {
+.watch-tv {
     text-align: center;
     padding: 4rem 1.1rem;
 }
@@ -340,7 +342,7 @@ section {
 
 /* ///////////// SECTION 5. KIDS PROFILE ///////////// */
 
-.kids-container {
+.kids {
     text-align: center;
     padding: 4rem 1.1rem;
 }
@@ -542,7 +544,12 @@ footer {
 
 
 
-@media (min-width: 950px) and (max-width: 1200px) {
+@media (min-width: 950px) {
+
+    .hero-container {
+        height: min(100vh, 950px);
+    }
+
     /* html {
         --netflix-red: #e50914;
         --border: 2px solid gray;
@@ -550,16 +557,18 @@ footer {
         --p: 1rem;
     } */
 
-    .tv-container,
-    .offline-container,
-    .watch-container,
-    .kids-container {
+    .tvs,
+    .offline-download,
+    .watch-tv,
+    .kids {
         display: grid;
         grid-template-columns: 50% 50%;
         align-items: center;
         text-align: left;
         padding-left: 5rem;
         padding-right: 5rem;
+        max-width: 1200px;
+        margin: auto;
     }
 
     .download-img,
@@ -571,13 +580,27 @@ footer {
         text-align: left;
     }
 
+    details {
+        padding: 0.5rem 1rem;
+    }
+
+    summary {
+        font-size: 1.7rem;
+
+    }
+
     .faq-membership {
         box-sizing: border-box;
         width: min(75%, 850px);
     }
 
+    footer {
+        width: min(75%, 850px);
+    }
+
     .footer-links ul {
         grid-template-columns: auto auto auto auto;
+
     }
 
     .tv-container .smart-tvs {}
