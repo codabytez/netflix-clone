@@ -10,6 +10,7 @@ sans-serif; */
     overflow-x: hidden;
     position: relative;
     box-sizing: border-box;
+    line-height: 1.28;
 }
 
 html {
@@ -82,7 +83,7 @@ section {
 
 .hero-container {
     box-sizing: border-box;
-    height: min(98%, 550px);
+    height: min(90vh, 500px);
     position: relative;
     display: flex;
     justify-content: center;
@@ -95,6 +96,7 @@ section {
 /* Background Image for Hero Page */
 
 .bgi {
+    display: none;
     width: 100%;
     opacity: 0.8;
     position: absolute;
@@ -114,32 +116,33 @@ section {
     z-index: 10;
     color: #fff;
     text-align: center;
-    padding: 8rem 1rem 2rem;
+    padding: 5.5rem 1rem 2rem;
+    line-height: 1.3;
     /* padding-top: 9rem; */
 }
 
 .hero-text {
     margin: auto;
-    width: 500px;
+    /* width: 500px; */
 }
 
 .hero-text h1 {
-    font-size: 2.3rem;
+    overflow: visible;
+    font-size: 1.75rem;
     font-weight: 600;
-    margin: 0 0 1rem;
 }
 
 .hero-text h3 {
-    font-size: 1.05rem;
-    font-weight: 400;
-    margin: 0 0 1rem;
+    font-size: 1.1rem;
+    /* font-weight: 400; */
+    margin: 1rem 0;
 }
 
 .hero-text p {
-    font-size: 0.8rem;
-    font-weight: 300;
-    margin: 0 0 0.8rem;
-    /* padding: 0 1rem; */
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin: 0 0 1rem;
+    padding: 0 1rem;
 }
 
 /* Email and Button Styling */
@@ -151,13 +154,14 @@ section {
 }
 
 .hero-form input {
-    width: 78.5%;
-    margin-bottom: 0.8rem;
-    padding: 0.4rem;
+    width: 98.5%;
+    padding: 1rem 1rem 0;
+    margin: 0.1rem 0 1rem;
     box-sizing: border-box;
     margin-right: 0;
-    height: 2.5rem;
+    height: 3rem;
 }
+
 
 .hero-form button {
     background-color: var(--netflix-red);
@@ -173,6 +177,10 @@ section {
     cursor: pointer;
 }
 
+.fa-chevron-right {
+    font-size: 18px;
+}
+
 /* ///////////// SECTION 2. ENJOY ON TV ///////////// */
 
 .tvs {
@@ -181,14 +189,14 @@ section {
 }
 
 .smart-tvs h2 {
-    font-size: 1.5rem;
+    font-size: 1.625rem;
     font-weight: 600;
     margin: 0 0 1rem;
 }
 
 .smart-tvs p {
-    font-size: 0.7rem;
-    font-weight: 300;
+    font-size: 1.125rem;
+    font-weight: 400;
     margin: 0 0 0.8rem;
     /* padding: 0 1rem; */
 }
@@ -230,13 +238,13 @@ section {
 }
 
 .download-info h2 {
-    font-size: 1.5rem;
+    font-size: 1.62rem;
     font-weight: 600;
     margin: 0 0 1rem;
 }
 
 .download-info p {
-    font-size: 0.7rem;
+    font-size: 1.125rem;
     font-weight: 300;
     margin: 0 0 0.8rem;
     /* padding: 0 1rem; */
@@ -305,13 +313,13 @@ section {
 }
 
 .watch h2 {
-    font-size: 1.7rem;
+    font-size: 1.625rem;
     font-weight: 600;
     margin: 0 0 1rem;
 }
 
 .watch p {
-    font-size: 0.7rem;
+    font-size: 1.125rem;
     font-weight: 300;
     margin: 0 0 0.8rem;
     /* padding: 0 1rem; */
@@ -348,7 +356,7 @@ section {
 }
 
 .kids-profile h2 {
-    font-size: 1.7rem;
+    font-size: 1.625rem;
     font-weight: 600;
     margin: 0 0 1rem;
 }
@@ -364,18 +372,20 @@ section {
 
 .faq-container {
     width: 100%;
+    padding: 3.125rem 0;
 }
 
 .faq-membership {
-    width: min(100%, 549px);
+    width: min(100%, 550px);
     margin: auto;
-    padding: 2rem;
+    /* padding: 2rem; */
 }
 
 .faq-section h2 {
-    font-size: 1.5rem;
+    font-size: 1.625rem;
     font-weight: 600;
     margin: 0 0 1rem;
+    padding: 0 1.125rem;
 }
 
 details {
@@ -386,12 +396,12 @@ details {
 }
 
 details p {
-    font-size: 1rem;
+    font-size: 1.125rem;
 }
 
 summary {
     padding: 0.5em 1rem;
-    font-size: 1rem;
+    font-size: 1.125rem;
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -412,7 +422,7 @@ details[open] summary:after {
 }
 
 details[open] p {
-    padding: 0.5em 1em;
+    padding: 1.125em;
 }
 
 .faq-section,
@@ -421,23 +431,24 @@ details[open] p {
 }
 
 .membership-email p {
-    font-size: 0.76rem;
-    font-weight: 300;
-    margin: 0 0 0.8rem;
-    padding: 0 1rem;
+    font-size: 1.125rem;
+    max-width: 450px;
+    font-weight: 400;
+    margin: 1rem 0.5rem;
+    padding: 0 7%;
 }
 
 .membership-email input {
-    box-sizing: border-box;
+    /* box-sizing: border-box;
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 2px;
     margin: 0.5rem;
+    font-size: 1rem; */
     width: 90%;
-    font-size: 1rem;
 }
 
-.membership-email button {
+/* .membership-email button {
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 2px;
@@ -447,7 +458,7 @@ details[open] p {
     background-color: #e50914;
     color: #fff;
     cursor: pointer;
-}
+} */
 
 /* ///////////// SECTION 7. FOOTER ///////////// */
 
@@ -506,7 +517,11 @@ footer {
 
 /* ///////////// MEDIA QUERIES ///////////// */
 
-
+@media (max-width:350px) {
+    .footer-links ul {
+        grid-template-columns: auto auto;
+    }
+}
 
 
 
@@ -548,6 +563,10 @@ footer {
 
     .hero-container {
         height: min(100vh, 950px);
+    }
+
+    .hero-page {
+        max-width: 1000px;
     }
 
     /* html {
