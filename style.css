@@ -1,7 +1,4 @@
-/* ///////////// UTILITIES ///////////// */
-
-/* font-family: 'Open Sans',
-sans-serif; */
+/* SECTION UTILITIES  */
 
 * {
     margin: 0;
@@ -38,7 +35,12 @@ section {
     padding: 50px 5%;
 }
 
-/* ///////////// NAV BAR ///////////// */
+/* !SECTION */
+
+/* SECTION Styling of Body */
+
+/* SECTION NAV BAR */
+
 .nav-bar {
     display: grid;
     /* background-color: #fff; */
@@ -79,7 +81,9 @@ section {
     cursor: pointer;
 }
 
-/* ////////// HERO PAGE ////////////// */
+/* !SECTION */
+
+/* SECTION HERO PAGE  */
 
 .hero-container {
     box-sizing: border-box;
@@ -93,7 +97,7 @@ section {
     overflow: hidden;
 }
 
-/* Background Image for Hero Page */
+/* NOTE Background Image for Hero Page */
 
 .bgi {
     width: 100%;
@@ -137,13 +141,17 @@ section {
     overflow: visible;
     font-size: 1.75rem;
     font-weight: 600;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-text h3 {
     max-width: 650px;
     font-size: 1.1rem;
     /* font-weight: 400; */
-    margin: 1rem 0;
+    margin: 1rem auto;
+    text-align: center;
 }
 
 .hero-text p {
@@ -154,7 +162,7 @@ section {
     padding: 0 1rem;
 }
 
-/* Email and Button Styling */
+/* NOTE Email and Button Styling */
 
 .hero-form {
     display: inline-block;
@@ -194,9 +202,9 @@ section {
     align-items: center;
 }
 
+/* !SECTION */
 
-
-/* ///////////// SECTION 2. ENJOY ON TV ///////////// */
+/* SECTION FEATURE 2: ENJOY ON TV  */
 
 .tvs {
     text-align: center;
@@ -238,7 +246,9 @@ section {
     left: 10%;
 }
 
-/* ///////////// SECTION 3. OFFLINE SESSION ///////////// */
+/* !SECTION */
+
+/* SECTION FEATURE 3: OFFLINE DOWNLOAD */
 
 
 .download-info {
@@ -314,7 +324,9 @@ section {
     width: 50px;
 }
 
-/* ///////////// SECTION 4. WATCH EVERYWHERE ///////////// */
+/* !SECTION */
+
+/* SECTION FEATURE 4. WATCH EVERYWHERE */
 
 .watch-tv {
     text-align: center;
@@ -357,7 +369,9 @@ section {
     left: 17%;
 }
 
-/* ///////////// SECTION 5. KIDS PROFILE ///////////// */
+/* !SECTION */
+
+/* SECTION FEATURE 5. KIDS PROFILE */
 
 .kids {
     text-align: center;
@@ -377,7 +391,9 @@ section {
     /* padding: 0 1rem; */
 }
 
-/* ///////////// SECTION 6. FAQ ///////////// */
+/* !SECTION */
+
+/* SECTION FEATURE 6. FAQ */
 
 .faq-container {
     width: 100%;
@@ -457,9 +473,9 @@ details[open] p {
     width: min(90%, 450px);
 }
 
+/* !SECTION */
 
-
-/* ///////////// SECTION 7. FOOTER ///////////// */
+/* SECTION FEATURE 7. FOOTER */
 
 footer {
     background-color: #000;
@@ -508,9 +524,13 @@ footer {
     text-decoration: none;
 }
 
+/* !SECTION */
 
 
-/* ///////////// MEDIA QUERIES ///////////// */
+
+/* SECTION MEDIA QUERIES  */
+
+/* ANCHOR max width 350px */
 
 @media (max-width:350px) {
     .footer-links ul {
@@ -520,6 +540,7 @@ footer {
 
 /* /////////////////////////////////////////////// */
 
+/* ANCHOR min width 550px */
 
 @media (min-width: 550px) {
     html {
@@ -584,6 +605,7 @@ footer {
 
 /* /////////////////////////////////////////////// */
 
+/* ANCHOR min width 950px */
 
 @media (min-width: 950px) {
 
@@ -674,5 +696,7 @@ footer {
 
     }
 
-    .tv-container .smart-tvs {}
 }
+
+/* !SECTION */
+/* !SECTION */
