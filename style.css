@@ -34,7 +34,8 @@ main {
 }
 
 section {
-    border-bottom: 3px solid #2c2c2c;
+    border-bottom: 0.5rem solid #222;
+    padding: 50px 5%;
 }
 
 /* ///////////// NAV BAR ///////////// */
@@ -47,7 +48,7 @@ section {
     width: 100%;
     align-items: center;
     justify-items: stretch;
-    padding: 1rem;
+    padding: 1.25rem 3rem;
     background-color: transparent;
     /* border-bottom: 5px solid green; */
     justify-content: space-between;
@@ -56,9 +57,9 @@ section {
     left: 0;
 }
 
-/* 
-.logo {
-    color: #000;
+
+/* .logo {
+    padding-left: 2rem;
 } */
 
 /* .nav-links {
@@ -70,7 +71,7 @@ section {
     /* background-color: transparent; */
     border: none;
     border-radius: 2px;
-    padding: 0.3rem 0.7rem;
+    padding: 0.5rem 1rem;
     color: #fff;
     background-color: var(--netflix-red);
     font-size: 1rem;
@@ -82,7 +83,7 @@ section {
 
 .hero-container {
     box-sizing: border-box;
-    height: min(90vh, 500px);
+    /* height: min(90vh, 500px); */
     position: relative;
     display: flex;
     justify-content: center;
@@ -96,18 +97,26 @@ section {
 
 .bgi {
     width: 100%;
-    opacity: 0.8;
+    opacity: 0.5;
+    overflow: hidden;
     position: absolute;
-    top: -40px;
+    top: 0;
     left: 0;
-    background-image: linear-gradient(1deg, #000000e8 0%, #ffffff00 60%, #000000e8 90%),
-        url("images/hero-page-bg.jpg");
-    height: 110%;
+    background: #00000066;
+    background-image: linear-gradient(0deg, #000000cc 0, transparent 60%, #000000cc);
+    height: 100%;
     background-size: cover;
     color: white;
     /* padding: 20px; */
 }
 
+.bgi img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* /////////////////////////////////////////////// */
 
 .hero-page {
     box-sizing: border-box;
@@ -124,21 +133,24 @@ section {
 }
 
 .hero-text h1 {
+    max-width: 650px;
     overflow: visible;
     font-size: 1.75rem;
     font-weight: 600;
 }
 
 .hero-text h3 {
+    max-width: 650px;
     font-size: 1.1rem;
     /* font-weight: 400; */
     margin: 1rem 0;
 }
 
 .hero-text p {
+    max-width: 450px;
     font-size: 1.125rem;
     font-weight: 400;
-    margin: 0 0 1rem;
+    margin: 0 auto 1rem;
     padding: 0 1rem;
 }
 
@@ -156,7 +168,8 @@ section {
     margin: 0.1rem 0 1rem;
     box-sizing: border-box;
     margin-right: 0;
-    height: 3rem;
+    height: 50px;
+    background-color: #fff;
 }
 
 
@@ -174,15 +187,20 @@ section {
     cursor: pointer;
 }
 
-.fa-chevron-right {
-    font-size: 18px;
+.hero-form form {
+    display: flex;
+    width: 950px;
+    flex-direction: column;
+    align-items: center;
 }
+
+
 
 /* ///////////// SECTION 2. ENJOY ON TV ///////////// */
 
 .tvs {
     text-align: center;
-    padding: 4rem 1.1rem;
+    /* padding: 4rem 1.1rem; */
 }
 
 .smart-tvs h2 {
@@ -222,12 +240,6 @@ section {
 
 /* ///////////// SECTION 3. OFFLINE SESSION ///////////// */
 
-.offline-download {
-    /* position: relative; */
-    padding: 4rem 1.1rem;
-    /* height: 40rem; */
-    /* border: 2px solid palegreen; */
-}
 
 .download-info {
     text-align: center;
@@ -306,7 +318,7 @@ section {
 
 .watch-tv {
     text-align: center;
-    padding: 4rem 1.1rem;
+    /* padding: 4rem 1.1rem; */
 }
 
 .watch h2 {
@@ -349,7 +361,7 @@ section {
 
 .kids {
     text-align: center;
-    padding: 4rem 1.1rem;
+    /* padding: 4rem 1.1rem; */
 }
 
 .kids-profile h2 {
@@ -381,7 +393,7 @@ section {
 .faq-section h2 {
     font-size: 1.625rem;
     font-weight: 600;
-    margin: 0 0 1rem;
+    margin: 0 0 2rem;
     padding: 0 1.125rem;
 }
 
@@ -397,7 +409,7 @@ details p {
 }
 
 summary {
-    padding: 0.5em 1rem;
+    padding: 16px 44px 16px 22px;
     font-size: 1.125rem;
     list-style: none;
     display: flex;
@@ -431,8 +443,8 @@ details[open] p {
     font-size: 1.125rem;
     max-width: 450px;
     font-weight: 400;
-    margin: 1rem 0.5rem;
-    padding: 0 7%;
+    margin: 1.5rem auto;
+    padding: 0 5%;
 }
 
 .membership-email input {
@@ -442,37 +454,27 @@ details[open] p {
     border-radius: 2px;
     margin: 0.5rem;
     font-size: 1rem; */
-    width: 90%;
+    width: min(90%, 450px);
 }
 
-/* .membership-email button {
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 2px;
-    margin: 0.5rem 0;
-    width: max-content;
-    font-size: 1rem;
-    background-color: #e50914;
-    color: #fff;
-    cursor: pointer;
-} */
+
 
 /* ///////////// SECTION 7. FOOTER ///////////// */
 
 footer {
     background-color: #000;
     color: #aaa;
-    padding: 1rem;
+    padding: 50px 5% 0;
     /* min-width: 20rem;
     max-width: 40rem; */
     /* margin: auto; */
     width: min(100%, 549px);
-    margin: 2rem auto;
+    margin: 0 auto;
     /* text-align: center; */
 }
 
 .footer-text h2 {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 600;
     margin: 1rem 0;
 }
@@ -484,31 +486,27 @@ footer {
 .footer-links ul {
     display: grid;
     grid-template-columns: auto auto auto;
-    /*TODO: min width:640px, grid-template-columns = auto auto auto */
     gap: 0.5rem 1rem;
     justify-content: space-between;
 }
 
 .footer-links ul li a {
     color: #aaa;
-    font-size: 0.7rem;
+    font-size: 0.85rem;
     font-weight: 300;
     text-decoration: none;
 }
 
-
-
 .footer-country {
-    margin-top: 2rem;
+    margin: 2rem 0 2rem;
 }
 
 .footer-country p {
     color: #aaa;
-    font-size: 0.7rem;
+    font-size: 0.85rem;
     font-weight: 300;
     text-decoration: none;
 }
-
 
 
 
@@ -520,9 +518,10 @@ footer {
     }
 }
 
+/* /////////////////////////////////////////////// */
 
 
-@media (min-width: 550px) and (max-width: 949px) {
+@media (min-width: 550px) {
     html {
         --netflix-red: #e50914;
         --border: 2px solid gray;
@@ -530,13 +529,33 @@ footer {
         --p: 1.3rem;
     }
 
+    section {
+        padding: 70px 45px;
+    }
+
+    .container h1 {
+        font-size: 3.125rem;
+    }
 
     .container h2 {
-        font-size: var(--h2);
+        font-size: 2.5rem;
+    }
+
+    .container h3 {
+        font-size: 1.625rem;
     }
 
     .container p {
-        font-size: var(--p);
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+
+    .hero-text p {
+        font-size: 23px;
+    }
+
+    .hero-page {
+        padding: 70px 0;
     }
 
     /* section {
@@ -550,20 +569,52 @@ footer {
 
     .faq-membership {
         box-sizing: border-box;
-        width: min(90%, 850px);
+        width: min(80%, 850px);
+    }
+
+    .membership-email p {
+        font-size: 1.125rem;
+        padding: 0 9%;
+    }
+
+    .membership-email input {
+        width: min(80%, 450px);
     }
 }
 
+/* /////////////////////////////////////////////// */
 
 
 @media (min-width: 950px) {
 
+    .hero-form form {
+        flex-direction: row;
+    }
+
+    .hero-form input {
+        height: 60px;
+        /* flex-basis: 70%; */
+    }
+
+    .hero-form button {
+        flex-basis: 30%;
+        padding: 0 1rem 0;
+        margin: 0.1rem 0 1rem;
+        box-sizing: border-box;
+        margin-right: 0;
+        height: 60px;
+    }
+
     .hero-container {
-        height: min(100vh, 950px);
+        height: min(110%, 950px);
     }
 
     .hero-page {
         max-width: 1000px;
+    }
+
+    .hero-text p {
+        max-width: 950px;
     }
 
     /* html {
@@ -608,6 +659,10 @@ footer {
     .faq-membership {
         box-sizing: border-box;
         width: min(75%, 850px);
+    }
+
+    .membership-email p {
+        max-width: 950px;
     }
 
     footer {
