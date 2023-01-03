@@ -11,9 +11,6 @@
 
 html {
     --netflix-red: #e50914;
-    --border: 2px solid gray;
-    --h2: 1.5rem;
-    --p: 0.7rem;
 }
 
 body {
@@ -163,6 +160,7 @@ section {
 }
 
 /* NOTE Email and Button Styling */
+/* TODO style the input so the email placeholder is absolute when active */
 
 .hero-form {
     display: inline-block;
@@ -544,9 +542,6 @@ footer {
 @media (min-width: 550px) {
     html {
         --netflix-red: #e50914;
-        --border: 2px solid gray;
-        --h2: 2rem;
-        --p: 1.3rem;
     }
 
     .nav-bar {
